@@ -1,0 +1,132 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: clamp(2rem, 1.47172rem + 2.254vw, 3.5rem);
+  margin-bottom: clamp(4rem, 3.82398rem + 0.751vw, 4.5rem);
+  gap: clamp(1.75rem, 4.79219rem + -3.38vw, 4rem);
+}
+
+@media only screen and (min-width: 768px) {
+  .heroContainer {
+    flex-direction: row;
+  }
+}
+
+.heroLeftContainer {
+  width: 100%;
+}
+
+.featuredImageDesktop {
+  display: none;
+}
+
+.featuredImageMobile {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.leftTextContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-top: clamp(1.5rem, 1.41188rem + 0.376vw, 1.75rem);
+  gap: clamp(1rem, 0.73586rem + 1.127vw, 1.75rem);
+}
+
+@media only screen and (min-width: 768px) {
+  .heroLeftContainer {
+    width: 65%;
+  }
+
+  .featuredImageDesktop {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .featuredImageMobile {
+    display: none;
+  }
+
+  .leftTextContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.rightTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.heroRightContainer {
+  width: 100%;
+  background-color: #00001a;
+  padding: clamp(1.5rem, 1.32398rem + 0.751vw, 2rem)
+    clamp(1.25rem, 1.16188rem + 0.376vw, 1.5rem);
+}
+
+@media only screen and (min-width: 768px) {
+  .heroRightContainer {
+    width: 31.6%;
+  }
+}
+
+.newsCard {
+  padding-top: 2rem;
+}
+
+.newsCard:not(:last-child) {
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid #5e607a;
+}
+
+.headingLinkHover:hover {
+  color: #e9aa52;
+}
+
+.newsText {
+  color: #c5c6ce;
+  margin-top: 0.5rem;
+}
+
+.articleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.articleCard {
+  display: flex;
+  width: 100%;
+  height: 8rem;
+  gap: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .articleContainer {
+    flex-direction: row;
+  }
+  .articleCard {
+    width: 33.33%;
+  }
+}
+
+.articleImage {
+  width: 100%;
+  max-width: 6.25rem;
+  height: auto;
+}
+
+.articleText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.articleLinkHover:hover {
+  color: #f15d51;
+}
