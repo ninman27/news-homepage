@@ -1,10 +1,10 @@
-.navContainer {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navMenuItemsContainer {
+.menuItemsContainer {
   display: none;
 }
 
@@ -50,7 +50,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .navMenuItemsContainer {
+  .menuItemsContainer {
     display: flex;
     gap: 2.5rem;
   }

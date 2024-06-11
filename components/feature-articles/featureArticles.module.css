@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+}
+
+.imageDesktop {
+  display: none;
+}
+
+.imageMobile {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.textContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-top: clamp(1.5rem, 1.41188rem + 0.376vw, 1.75rem);
+  gap: clamp(1rem, 0.73586rem + 1.127vw, 1.75rem);
+}
+
+.rightTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 65%;
+  }
+
+  .imageDesktop {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .imageMobile {
+    display: none;
+  }
+
+  .textContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}

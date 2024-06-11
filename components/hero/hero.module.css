@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: clamp(2rem, 1.47172rem + 2.254vw, 3.5rem);
+  margin-bottom: clamp(4rem, 3.82398rem + 0.751vw, 4.5rem);
+  gap: clamp(1.75rem, 4.79219rem + -3.38vw, 4rem);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
